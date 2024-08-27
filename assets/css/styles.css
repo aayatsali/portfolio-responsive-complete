@@ -209,8 +209,9 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  float: right;
+  right:0;
+  top: 80px;
   width: 260px;
 }
 .home__blob {
@@ -237,18 +238,15 @@ img {
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
-  text-align: center;
+  text-align:center;
 }
-.about__subtitle {
-  margin-bottom: var(--mb-2);
+  .about__text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px;
 }
-.about__img {
-  justify-self: center;
-}
-.about__img img {
-  width: 200px;
-  border-radius: 0.5rem;
-}
+
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -293,13 +291,13 @@ img {
 .skills__html {
   width: 95%;
 }
-.skills__css {
-  width: 85%;
+.skills__github {
+  width: 60%;
 }
-.skills__js {
-  width: 65%;
+.skills__figma {
+  width: 80%;
 }
-.skills__ux {
+.skills__strategy {
   width: 85%;
 }
 .skills__img {
@@ -307,6 +305,12 @@ img {
 }
 
 /* ===== WORK =====*/
+
+.section-subtitle {
+  text-align: justify;
+  margin: auto;
+  width:fit-content;
+}
 .work__container {
   row-gap: 2rem;
 }
@@ -321,6 +325,20 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+
+/* ===== reading and listening =====*/
+.readinglistening_two-column-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.readinglistening1 {
+  row-gap: 2rem;
+  text-align:left;
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {
