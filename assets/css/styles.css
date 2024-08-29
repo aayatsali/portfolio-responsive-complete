@@ -251,7 +251,7 @@ img {
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
-  text-align: center;
+  text-align: left;
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
@@ -277,7 +277,7 @@ img {
 }
 .skills__names {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 .skills__bar {
   position: absolute;
@@ -289,16 +289,16 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 95%;
+  width: 75%;
 }
 .skills__github {
-  width: 60%;
-}
-.skills__figma {
   width: 80%;
 }
-.skills__strategy {
+.skills__figma {
   width: 85%;
+}
+.skills__strategy {
+  width: 95%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -331,14 +331,19 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .readinglistening1 {
   row-gap: 2rem;
   text-align:left;
+  list-style-type: circle;
 }
-
+.readinglistening2 {
+  row-gap: 2rem;
+  text-align:left;
+  list-style-type: circle;
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
