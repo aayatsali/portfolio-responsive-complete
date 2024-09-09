@@ -241,7 +241,7 @@ img {
   text-align:center;
 }
   .about__text{
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     padding: 20px;
