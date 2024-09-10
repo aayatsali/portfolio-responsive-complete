@@ -241,10 +241,12 @@ img {
   text-align:center;
 }
   .about__text{
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
     grid-gap: 30px;
-    margin: auto;
+    max-width: var(--z-fixed);
     padding: 30px;
 }
 
